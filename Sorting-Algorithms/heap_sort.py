@@ -27,10 +27,8 @@ def heap_sort(arr):
     return arr
 
 
-n = int(input("Enter the number of elements: "))
-arr = [int(input("Enter element: ")) for i in range(n)]
-
-print(f"Original array: {arr}")
+n = int(input())
+arr = [int(input()) for i in range(n)]
 
 heap_sort(arr)
 
