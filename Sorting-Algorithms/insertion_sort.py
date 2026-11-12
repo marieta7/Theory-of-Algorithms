@@ -11,12 +11,9 @@ def insertion_sort(arr):
 
     return arr
 
+n = int(input())
 
-n = int(input("Enter the number of elements: "))
-
-arr = [int(input(f"Enter element: ")) for i in range(n)]
-
-print(f"Original array: {arr}")
+arr = [int(input()) for i in range(n)]
 
 insertion_sort(arr)
 
