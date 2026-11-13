@@ -1,13 +1,13 @@
 def partition(arr, l, r):
-    v = arr[(l + r) // 2]
+    pivot = arr[(l + r) // 2]
     i = l
     j = r
 
     while i <= j:
-        while arr[i] < v:
+        while arr[i] < pivot:
             i += 1
 
-        while arr[j] > v:
+        while arr[j] > pivot:
             j -= 1
 
         if i >= j:
@@ -29,10 +29,8 @@ def quick_sort(arr, l, r):
     return arr
 
 
-n = int(input("Enter the number of elements: "))
-arr = [int(input("Enter element: ")) for i in range(n)]
-
-print(f"Original array: {arr}")
+n = int(input())
+arr = [int(input()) for i in range(n)]
 
 quick_sort(arr, 0, len(arr) - 1)
 
