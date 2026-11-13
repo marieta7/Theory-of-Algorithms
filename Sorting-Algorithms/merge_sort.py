@@ -41,8 +41,6 @@ def merge_sort(arr, left, right):
 n = int(input())
 arr = [int(input()) for i in range(n)]
 
-print(f"Original array: {arr}")
-
 merge_sort(arr, 0, len(arr) - 1)
 
 print(f"Sorted array: {arr}")
