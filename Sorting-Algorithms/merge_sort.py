@@ -38,8 +38,8 @@ def merge_sort(arr, left, right):
     return arr
 
 
-n = int(input("Enter the number of elements: "))
-arr = [int(input("Enter element: ")) for i in range(n)]
+n = int(input())
+arr = [int(input()) for i in range(n)]
 
 print(f"Original array: {arr}")
 
